@@ -1,0 +1,63 @@
+/* Fondo general y tipografía */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff0f5; /* fondo rosado claro */
+  color: #4b2c2c;
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #c71585; /* rosa fuerte */
+}
+
+/* Contenedor de cada semestre */
+.semestre {
+  margin-bottom: 2.5rem;
+}
+
+.semestre h2 {
+  margin-bottom: 0.5rem;
+  color: #d63384; /* rosa oscuro */
+}
+
+/* Contenedor de los ramos */
+.ramos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Cada ramo */
+.ramo {
+  background: #ffe6f0; /* rosa claro */
+  border: 2px solid #f8bbd0;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 220px;
+  box-shadow: 0 3px 6px rgba(255, 192, 203, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ramo:hover {
+  background-color: #fce4ec; /* un poco más fuerte */
+  transform: scale(1.02);
+}
+
+/* Ramos aprobados (verde suave con rosa) */
+.ramo.aprobado {
+  background-color: #f3d1e2;
+  border-color: #d63384;
+  box-shadow: 0 0 10px #e91e63;
+}
+
+/* Texto adicional en cada ramo */
+.ramo .info {
+  font-size: 0.85rem;
+  color: #5a3e4c;
+  margin-top: 0.3rem;
+}
